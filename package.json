@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MrRio/jsPDF.git"
+    "url": "https://github.com/driscolldcfpb/jsPDF.git"
   },
   "dependencies": {
     "adler32cs": "0.0.1",
@@ -50,6 +50,7 @@
   "scripts": {
     "start": "ws",
     "build": "npm install && node build.js",
+    "buildnew": "npm install && node buildnew.js",
     "version": "npm run build && git add -A dist",
     "test": "./node_modules/.bin/karma start saucelabs.karma.conf.js --single-run && for a in coverage/*; do codeclimate-test-reporter < \"$a/lcov.info\"; break; done",
     "test-local": "node tests/utils/reference-server.js & karma start",
